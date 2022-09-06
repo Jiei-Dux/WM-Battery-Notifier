@@ -1,1 +1,3 @@
 # i3wm-Battery-Notification
+
+This is a bash script... I don't know what else to type here... 
