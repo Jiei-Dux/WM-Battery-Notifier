@@ -17,13 +17,13 @@ Low Charge:<br>
 REQUIREMENTS
 </b>
 
-<li>
-  <ul>
-    dunst ( notification daemon ) </ul>
+<ul>
+  <li>
+    dunst ( notification daemon ) </li>
   
-  <ul>
-    acpi ( to get info bout yer battery ) </ul>
+  <li>
+    acpi ( to get info bout yer battery ) </li>
   
-  <ul>
-    sox ( OPTIONAL: this can play mp3 files ) </ul>
-</li>
+  <li>
+    sox ( OPTIONAL: this can play mp3 files ) </li>
+</ul>
