@@ -11,3 +11,22 @@ Full Charge:<br>
 
 Low Charge:<br>
 ![alt text](https://github.com/Jiei-720p/i3wm-Battery-Notification/blob/main/LowCharge.png?raw=true) 
+
+
+<b>
+REQUIREMENTS
+</b>
+
+<li>
+  <ul>
+    dunst ( notification daemon )
+  </ul>
+  
+  <ul>
+    acpi ( to get info bout yer battery )
+  </ul>
+  
+  <ul>
+    sox ( OPTIONAL: this can play mp3 files )
+  </ul>
+</li>
