@@ -9,13 +9,13 @@ do
 	if [ "$Bat_Stat" -eq 1 ]; then	
 		if [ "$Bat_Pct" -ge 80 ]; then
 			dunstify -t 10000 -u normal "Battery full." "Level: ${Bat_Pct}% "
-			#play /
+			#play /path/to/mp3/file
 		fi
 
 	elif [ "$Bat_Stat" -eq 0 ]; then
 		if [ "$Bat_Pct" -le 20 ]; then
 			dunstify -t 10000 -u critical "Low Battery." "Level: ${Bat_Pct}%" "Plug the Charger!"
-			#play /home/$USER/Music/Source/News-Intro.mp3
+			#play /path/to/mp3/file
 
 		elif [ "$Bat_Pct" -le 5 ]; then
 			dunstify -t 1000 -u critical "Battery at Critical Level." "Suspending..."
