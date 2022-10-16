@@ -19,14 +19,11 @@ REQUIREMENTS
 
 <li>
   <ul>
-    dunst ( notification daemon )
-  </ul>
+    dunst ( notification daemon ) </ul>
   
   <ul>
-    acpi ( to get info bout yer battery )
-  </ul>
+    acpi ( to get info bout yer battery ) </ul>
   
   <ul>
-    sox ( OPTIONAL: this can play mp3 files )
-  </ul>
+    sox ( OPTIONAL: this can play mp3 files ) </ul>
 </li>
