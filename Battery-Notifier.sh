@@ -2,18 +2,18 @@
 
 LOCK=/tmp/BatteryNotif.lock
 
-remove_lock() {
+DeleteLockFile() {
 rm -rf "$LOCK"
 }
 
-another_instance() {
-	echo "There is another instance running, exiting"
+AlreadyExists() {
+	echo "It already exists... exiting..."
 	exit 1
 }
 
-mkdir "$LOCK" || another_instance
+mkdir "$LOCK" || AlreadyExists
 
-trap remove_lock EXIT
+trap DeleteLockFile exit
 
 while true
 do
