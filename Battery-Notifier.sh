@@ -1,5 +1,20 @@
 #! /usr/bin/env bash
 
+LOCK=/tmp/BatteryNotif.lock
+
+remove_lock() {
+rm -rf "$LOCK"
+}
+
+another_instance() {
+	echo "There is another instance running, exiting"
+	exit 1
+}
+
+mkdir "$LOCK" || another_instance
+
+trap remove_lock EXIT
+
 while true
 do
 	
@@ -13,11 +28,11 @@ do
 		fi
 
 	elif [ "$Bat_Stat" -eq 0 ]; then
-		if [ "$Bat_Pct" -le 20 ]; then
+		if [ "$Bat_Pct" -le 25 ]; then
 			dunstify -t 10000 -u critical "Low Battery." "Level: ${Bat_Pct}%" "Plug the Charger!"
 			#play /path/to/mp3/file
 
-		elif [ "$Bat_Pct" -le 5 ]; then
+		elif [ "$Bat_Pct" -le 15 ]; then
 			dunstify -t 1000 -u critical "Battery at Critical Level." "Suspending..."
 			sleep 10
 			systemctl suspend
