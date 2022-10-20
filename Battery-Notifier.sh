@@ -1,19 +1,12 @@
 #! /usr/bin/env bash
 
-LOCK=/tmp/BatteryNotif.lock
-
-DeleteLockFile() {
-rm -rf "$LOCK"
-}
-
-AlreadyExists() {
-	echo "It already exists... exiting..."
-	exit 1
-}
-
-mkdir "$LOCK" || AlreadyExists
-
-trap DeleteLockFile exit
+for pid in $(pgrep -f $0);
+do
+	if [ $pid != $$ ]; 
+	then
+		kill $pid
+	fi
+done
 
 while true
 do
