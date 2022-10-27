@@ -1,6 +1,6 @@
-# i3wm-Battery-Notification
+# Battery-Notifier
 
-This is a bash script... I don't know what else to type here... 
+This is a bash script that notifies you if your battery charge reaches certain thresholds... I don't know what else to type here... 
 
 Full Charge:<br>
 ![alt text](https://github.com/Jiei-720p/i3wm-Battery-Notification/blob/main/FullCharge.png?raw=true) 
