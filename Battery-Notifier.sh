@@ -1,4 +1,4 @@
-#! /usr/bin/env bash
+#! /usr/bin/bash
 
 for pid in $(pgrep -f $0);
 do
@@ -32,5 +32,5 @@ do
 
 		fi
 	fi
-	sleep 300
+	sleep 1
 done
