@@ -25,5 +25,5 @@ REQUIREMENTS
     acpi ( to get info bout yer battery ) </li>
   
   <li>
-    sox ( OPTIONAL: this can play mp3 files ) </li>
+    sox ( OPTIONAL: This enables you to have sounds with your notifications ) </li>
 </ul>
